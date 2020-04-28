@@ -7,7 +7,7 @@ body {
 }
 .bold {
   text-type: bold;
-  color: red;
+  color: brightblue;
 }
 h1, h2 {
   text-align: center;
@@ -24,8 +24,9 @@ img {
 }
 .notes {
   font-family: serif;
-  border: 3px solid navy;
+  border: 3px solid brightblue;
+  padding: 5px;
 }
 h1 {
-  border: 2px dashed red;
+  border: 2px dashed brightblue;
 }
