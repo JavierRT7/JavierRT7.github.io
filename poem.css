@@ -30,3 +30,6 @@ img {
 h1 {
   border: 2px dashed blue;
 }
+.highlighted {
+  background-color: yellow;
+}
