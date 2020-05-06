@@ -10,3 +10,6 @@ h1 {
 p {
 	margin: 20px auto 20px auto;
 }
+input {
+	text-align: center;
+}
