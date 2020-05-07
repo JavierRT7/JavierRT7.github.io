@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="quiz.css">
+<h2>Score: <span class="score" id="score2">...</span></h2>
 <h1>Try my quiz!</h1>
 <p><strong>What is the scientific name of the western lowland gorilla?</strong></p>
 <p><input id="answer1"></p>
@@ -7,12 +8,15 @@
 <h1 id="result1">...</h1>
 
 <script>
+var score = 0;
 function clickAction1() {
   result1.textContent = "Nope!"
  if (answer1.value == "gorilla gorilla gorilla") {
    result1.textContent = "You got it!";
-   result1.classList.add('correct');
+   result1.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction1() {
   result1.textContent = "..."
@@ -33,6 +37,8 @@ function clickAction2() {
    result2.textContent = "You got it!";
    result2.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction2() {
   result2.textContent = "..."
@@ -53,6 +59,8 @@ function clickAction3() {
    result3.textContent = "You got it!";
    result3.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction3() {
   result3.textContent = "..."
@@ -73,6 +81,8 @@ function clickAction4() {
    result4.textContent = "You got it!";
    result4.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction4() {
   result4.textContent = "..."
@@ -93,6 +103,8 @@ function clickAction5() {
    result5.textContent = "You got it!";
    result5.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction5() {
   result5.textContent = "..."
@@ -113,6 +125,8 @@ function clickAction6() {
    result6.textContent = "You got it!";
    result6.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction6() {
   result6.textContent = "..."
@@ -133,6 +147,8 @@ function clickAction7() {
    result7.textContent = "You got it!";
    result7.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction7() {
   result7.textContent = "..."
@@ -153,6 +169,8 @@ function clickAction8() {
    result8.textContent = "You got it!";
    result8.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction8() {
   result8.textContent = "..."
@@ -173,6 +191,8 @@ function clickAction9() {
    result9.textContent = "You got it!";
    result9.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
 };
 function inputAction9() {
   result9.textContent = "..."
@@ -193,6 +213,9 @@ function clickAction10() {
    result10.textContent = "You got it!";
    result10.classList.add('correct')
  }
+ score = score + 1;
+ score2.textContent = score.value;
+ score3.textContent = score.value;
 };
 function inputAction10() {
   result10.textContent = "..."
@@ -201,3 +224,4 @@ function inputAction10() {
   button10.onclick = clickAction10
 
 </script>
+<h2 class="score4">Your score was: <span id="score3" class="score">...</span></h2>
