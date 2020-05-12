@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="quiz.css">
-<h2>Score: <span class="score" id="score2">...</span></h2>
+<h3>Score: <span class="score" id="score5">...</span></h3>
 <h1>Try my quiz!</h1>
 <p><strong>What is the scientific name of the western lowland gorilla?</strong></p>
 <p><input id="answer1"></p>
@@ -8,15 +8,15 @@
 <h1 id="result1">...</h1>
 
 <script>
-var score = 0;
 function clickAction1() {
   result1.textContent = "Nope!"
+  score5.textContent = "0"
  if (answer1.value == "gorilla gorilla gorilla") {
    result1.textContent = "You got it!";
    result1.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction1() {
   result1.textContent = "..."
@@ -36,9 +36,9 @@ function clickAction2() {
  if (answer2.value == "Ouagadougou") {
    result2.textContent = "You got it!";
    result2.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction2() {
   result2.textContent = "..."
@@ -58,9 +58,9 @@ function clickAction3() {
  if (answer3.value == "30 million") {
    result3.textContent = "You got it!";
    result3.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction3() {
   result3.textContent = "..."
@@ -80,9 +80,9 @@ function clickAction4() {
  if (answer4.value == "Canada") {
    result4.textContent = "You got it!";
    result4.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction4() {
   result4.textContent = "..."
@@ -102,9 +102,9 @@ function clickAction5() {
  if (answer5.value == "Robert Wadlow") {
    result5.textContent = "You got it!";
    result5.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction5() {
   result5.textContent = "..."
@@ -124,9 +124,9 @@ function clickAction6() {
  if (answer6.value == "pneumonoultramicroscopicsilicovolcanoconiosis") {
    result6.textContent = "You got it!";
    result6.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction6() {
   result6.textContent = "..."
@@ -146,9 +146,9 @@ function clickAction7() {
  if (answer7.value == "195") {
    result7.textContent = "You got it!";
    result7.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction7() {
   result7.textContent = "..."
@@ -168,9 +168,9 @@ function clickAction8() {
  if (answer8.value == "79") {
    result8.textContent = "You got it!";
    result8.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction8() {
   result8.textContent = "..."
@@ -190,9 +190,9 @@ function clickAction9() {
  if (answer9.value == "1789") {
    result9.textContent = "You got it!";
    result9.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
 };
 function inputAction9() {
   result9.textContent = "..."
@@ -212,10 +212,9 @@ function clickAction10() {
  if (answer10.value == "269") {
    result10.textContent = "You got it!";
    result10.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+   score3.textContent = Number(score3.textContent) + 1
  }
- score = score + 1;
- score2.textContent = score.value;
- score3.textContent = score.value;
 };
 function inputAction10() {
   result10.textContent = "..."
