@@ -1,12 +1,40 @@
-h1 {
+h1, h2, h4 {
 	text-align: center;
 	font-family: elephant
 }
-body {
+.my {
 	border: 20px solid green;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
-h2 {
-	font-family: elephant
+body {
+	text-align: center;
+}
+.blueborders {
+	border: 20px solid blue;
+}
+.redborders {
+	border: 20px solid red;
+}
+.greenborders {
+	border: 20px solid green;
+}
+.bluecategorys {
+	color: blue;
+}
+.redcategorys {
+	color: red;
+}
+.greencategorys {
+	color: green;
+}
+.bluethings {
+	color: blue;
+}
+.redthings {
+	color: red;
+}
+.greenthings {
+	color: green;
 }

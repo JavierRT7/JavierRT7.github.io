@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="javier2.css">
+<p class="my" id="my">
 <h1>My Favourite Things<h1>
 <p>
 <h2>Food:<h2>
@@ -17,4 +18,180 @@
 <li><a href="https://www.kudosprime.com/gts/stats.php?profile=4346255">My stats on GT Sport</a></li>
 </ul>
 </p>
+</p>
+<h1>Now let's create a similar page of your favourite things.<h1>
+<h4>What is your first category? e.g. food or racing</h4>
+<p><input id="Category1"></p>
+<h6>What is the first thing you would like to put un that category?</h6>
+<p><input id="Thing1"></p>
+<h6>What is the second thing you would like to put un that category?</h6>
+<p><input id="Thing2"></p>
+<h6>What is the third thing you would like to put un that category?</h6>
+<p><input id="Thing3"></p>
+<h4>What is your second category?</h4>
+<p><input id="Category2"></p>
+<h6>What is the first thing you would like to put un that category?</h6>
+<p><input id="Thing4"></p>
+<h6>What is the second thing you would like to put un that category?</h6>
+<p><input id="Thing5"></p>
+<h6>What is the third thing you would like to put un that category?</h6>
+<p><input id="Thing6"></p>
+<h4>What is your third category?</h4>
+<p><input id="Category3"></p>
+<h6>What is the first thing you would like to put un that category?</h6>
+<p><input id="Thing7"></p>
+<h6>What is the second thing you would like to put un that category?</h6>
+<p><input id="Thing8"></p>
+<h6>What is the third thing you would like to put un that category?</h6>
+<p><input id="Thing9"></p>
+<h4>What colour do you want the border to be?</h4>
+<p><button id="blueborder">Blue</button><button id="redborder">Red</button><button id="greenborder">Green</button></p>
+<h4>What colour do you want the category names to be?</h4>
+<p><button id="bluecategory">Blue</button><button id="redcategory">Red</button><button id="greencategory">Green</button></p>
+<h4>What colour do you want the list items to be?</h4>
+<p><button id="bluething">Blue</button><button id="redthing">Red</button><button id="greenthing">Green</button></p>
+<p id="your">
+<h1>Your Favourite Things</h1>
+<h2><span id="Category21">...</span>:</h2>
+<p>
+<ul>
+<li id="Thing21">...</li>
+<li id="Thing22">...</li>
+<li id="Thing23">...</li>
+</ul>
+</p>
+<h2><span id="Category22">...</span>:</h2>
+<p>
+<ul>
+<li id="Thing24">...</li>
+<li id="Thing25">...</li>
+<li id="Thing26">...</li>
+</ul>
+</p>
+<h2><span id="Category23">...</span>:</h2>
+<p>
+<ul>
+<li id="Thing27">...</li>
+<li id="Thing28">...</li>
+<li id="Thing29">...</li>
+</ul>
+</p>
+</p>
+<script>
+function blueborderAction() {
+  your.classList.add('blueborders');
+}
+function redborderAction() {
+  your.classList.add('redborders');
+}
+function greenborderAction() {
+  your.classList.add('greenborders');
+}
+function bluecategoryAction() {
+  Category21.classList.add('bluecategorys');
+  Category22.classList.add('bluecategorys');
+  Category23.classList.add('bluecategorys');
+}
+function redcategoryAction() {
+  Category21.classList.add('redcategorys');
+  Category22.classList.add('redcategorys');
+  Category23.classList.add('redcategorys');
+}
+function greencategoryAction() {
+  Category21.classList.add('greencategorys');
+  Category22.classList.add('greencategorys');
+  Category23.classList.add('greencategorys');
+}
+function bluethingAction() {
+  Thing21.classList.add('bluethings');
+  Thing22.classList.add('bluethings');
+  Thing23.classList.add('bluethings');
+  Thing24.classList.add('bluethings');
+  Thing25.classList.add('bluethings');
+  Thing26.classList.add('bluethings');
+  Thing27.classList.add('bluethings');
+  Thing28.classList.add('bluethings');
+  Thing29.classList.add('bluethings');
+}
+function redthingAction() {
+  Thing21.classList.add('redthings');
+  Thing22.classList.add('redthings');
+  Thing23.classList.add('redthings');
+  Thing24.classList.add('redthings');
+  Thing25.classList.add('redthings');
+  Thing26.classList.add('redthings');
+  Thing27.classList.add('redthings');
+  Thing28.classList.add('redthings');
+  Thing29.classList.add('redthings');
+}
+function greenthingAction() {
+  Thing21.classList.add('greenthings');
+  Thing22.classList.add('greenthings');
+  Thing23.classList.add('greenthings');
+  Thing24.classList.add('greenthings');
+  Thing25.classList.add('greenthings');
+  Thing26.classList.add('greenthings');
+  Thing27.classList.add('greenthings');
+  Thing28.classList.add('greenthings');
+  Thing29.classList.add('greenthings');
+}
+function Category1Action() {
+  Category21.textContent = Category1.value;
+}
+function Thing1Action() {
+  Thing21.textContent = Thing1.value;
+}
+function Thing2Action() {
+  Thing22.textContent = Thing2.value;
+}
+function Thing3Action() {
+  Thing23.textContent = Thing3.value;
+}
+function Category2Action() {
+  Category22.textContent = Category2.value;
+}
+function Thing4Action() {
+  Thing24.textContent = Thing4.value;
+}
+function Thing5Action() {
+  Thing25.textContent = Thing5.value;
+}
+function Thing6Action() {
+  Thing26.textContent = Thing6.value;
+}
+function Category3Action() {
+  Category23.textContent = Category3.value;
+}
+function Thing7Action() {
+  Thing27.textContent = Thing7.value;
+}
+function Thing8Action() {
+  Thing28.textContent = Thing8.value;
+}
+function Thing9Action() {
+  Thing29.textContent = Thing9.value;
+}
+blueborder.onclick = blueborderAction
+redborder.onclick = redborderAction
+greenborder.onclick = greenborderAction
+bluecategory.onclick = bluecategoryAction
+redcategory.onclick = redcategoryAction
+greencategory.onclick = greengategoryAction
+bluething.onclick = bluethingAction
+redthing.onclick = redthingAction
+greenthing.onclick = greenthingAction
+Category1.oninput = Category1Action
+Thing1.oninput = Thing1Action
+Thing2.oninput = Thing2Action
+Thing3.oninput = Thing3Action
+Category2.oninput = Category2Action
+Thing4.oninput = Thing4Action
+Thing5.oninput = Thing5Action
+Thing6.oninput = Thing6Action
+Category3.oninput = Category3Action
+Thing7.oninput = Thing7Action
+Thing8.oninput = Thing8Action
+Thing9.oninput = Thing9Action
+</script
+
 
