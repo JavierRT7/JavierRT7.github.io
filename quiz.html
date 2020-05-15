@@ -48,11 +48,14 @@ function inputAction2() {
 
 </script>
 <p><strong>How many deer are there in the world?</strong></p>
-<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"></p>
+<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"><span id="rangevalue1"></span></p>
 <p><button id="button3">Check answer</button></p>
 <h1 id="result3">...</h1>
 
 <script>
+function changeAction1() {
+  rangevalue1.textContent = answer3.value;
+}
 function clickAction3() {
   result3.textContent = "Nope!"
  if (answer3.value == "30000000") {
@@ -62,6 +65,7 @@ function clickAction3() {
    score3.textContent = Number(score3.textContent) + 1
  }
 };
+  answer3.onchange = changeAction1
   button3.onclick = clickAction3
 
 </script>
@@ -132,11 +136,14 @@ function inputAction6() {
 
 </script>
 <p><strong>How many countries are there in the world?</strong></p>
-<p><input id="answer7" type="range" min="0" max="200" step="5"></p>
+<p><input id="answer7" type="range" min="0" max="200" step="5"><span id="rangevalue2"></span></p>
 <p><button id="button7">Check answer</button></p>
 <h1 id="result7">...</h1>
 
 <script>
+function changeAction2() {
+  rangevalue2.textContent = answer7.value;
+}
 function clickAction7() {
   result7.textContent = "Nope!"
  if (answer7.value == "195") {
@@ -146,19 +153,19 @@ function clickAction7() {
    score3.textContent = Number(score3.textContent) + 1
  }
 };
-function inputAction7() {
-  result7.textContent = "..."
-}
-  answer7.oninput = inputAction7
+  answer7.onchange = changeAction2
   button7.onclick = clickAction7
 
 </script>
 <p><strong>How old is Tom Jones?</strong></p>
-<p><input id="answer8" type="range" min="0" max="100" step="1"></p>
+<p><input id="answer8" type="range" min="0" max="100" step="1"><span id="rangevalue3"></span></p>
 <p><button id="button8">Check answer</button></p>
 <h1 id="result8">...</h1>
 
 <script>
+function changeAction3() {
+  rangevalue3.textContent = answer8.value;
+}
 function clickAction8() {
   result8.textContent = "Nope!"
  if (answer8.value == "79") {
@@ -168,10 +175,7 @@ function clickAction8() {
    score3.textContent = Number(score3.textContent) + 1
  }
 };
-function inputAction8() {
-  result8.textContent = "..."
-}
-  answer8.oninput = inputAction8
+  answer8.onchange = changeAction3
   button8.onclick = clickAction8
 
 </script>
