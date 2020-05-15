@@ -48,46 +48,42 @@ function inputAction2() {
 
 </script>
 <p><strong>How many deer are there in the world?</strong></p>
-<p><input id="answer3"></p>
+<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"></p>
 <p><button id="button3">Check answer</button></p>
 <h1 id="result3">...</h1>
 
 <script>
 function clickAction3() {
   result3.textContent = "Nope!"
- if (answer3.value == "30 million") {
+ if (answer3.value == "30000000") {
    result3.textContent = "You got it!";
    result3.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
  }
 };
-function inputAction3() {
-  result3.textContent = "..."
-}
-  answer3.oninput = inputAction3
   button3.onclick = clickAction3
 
 </script>
 <p><strong>Which country has the longest coastline in the world?</strong></p>
-<p><input id="answer4"></p>
+<label><input id="answer41" type="checkbox">Mexico</label>
+<label><input id="answer42" type="checkbox">Russia</label>
+<label><input id="answer43" type="checkbox">Australia</label>
+<label><input id="answer44" type="checkbox">Canada</label>
+<label><input id="answer45" type="checkbox">Greenland</label>
 <p><button id="button4">Check answer</button></p>
 <h1 id="result4">...</h1>
 
 <script>
 function clickAction4() {
   result4.textContent = "Nope!"
- if (answer4.value == "Canada") {
+ if (answer44.checked) {
    result4.textContent = "You got it!";
    result4.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
  }
 };
-function inputAction4() {
-  result4.textContent = "..."
-}
-  answer4.oninput = inputAction4
   button4.onclick = clickAction4
 
 </script>
@@ -136,7 +132,7 @@ function inputAction6() {
 
 </script>
 <p><strong>How many countries are there in the world?</strong></p>
-<p><input id="answer7"></p>
+<p><input id="answer7" type="range" min="0" max="200" step="5"></p>
 <p><button id="button7">Check answer</button></p>
 <h1 id="result7">...</h1>
 
@@ -158,7 +154,7 @@ function inputAction7() {
 
 </script>
 <p><strong>How old is Tom Jones?</strong></p>
-<p><input id="answer8"></p>
+<p><input id="answer8" type="range" min="0" max="100" step="1"></p>
 <p><button id="button8">Check answer</button></p>
 <h1 id="result8">...</h1>
 
