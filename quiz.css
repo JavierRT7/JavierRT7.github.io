@@ -8,7 +8,7 @@ h1 {
 	font-family: cursive;
 	color: blue;
 }
-p {
+p, label {
 	text-align: center;
 }
 h2 {
