@@ -221,8 +221,12 @@ function clickAction10() {
 function inputAction10() {
   result10.textContent = "..."
 }
+function clickAction11() {
+  score3.textContent = score5.value;
+}
   answer10.oninput = inputAction10
   button10.onclick = clickAction10
+  button10.onclick = clickAction11
 
 </script>
 <h2 class="score4">Your score was: <span id="score3" class="score">...</span></h2>
