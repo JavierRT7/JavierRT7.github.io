@@ -11,6 +11,8 @@
 function clickAction1() {
   result1.textContent = "Nope!"
   score5.textContent = "0"
+  score3.textContent = "0"
+  result1.classList.add('incorrect')
  if (answer1.value == "gorilla gorilla gorilla") {
    result1.textContent = "You got it!";
    result1.classList.add('correct')
@@ -33,6 +35,7 @@ function inputAction1() {
 <script>
 function clickAction2() {
   result2.textContent = "Nope!"
+  result2.classList.add('incorrect')
  if (answer2.value == "Ouagadougou") {
    result2.textContent = "You got it!";
    result2.classList.add('correct')
@@ -48,7 +51,7 @@ function inputAction2() {
 
 </script>
 <p><strong>How many deer are there in the world?</strong></p>
-<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"><span id="rangevalue1"></span></p>
+<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"><span id="rangevalue1">50000000</span></p>
 <p><button id="button3">Check answer</button></p>
 <h1 id="result3">...</h1>
 
@@ -58,6 +61,7 @@ function changeAction1() {
 }
 function clickAction3() {
   result3.textContent = "Nope!"
+  result3.classList.add('incorrect')
  if (answer3.value == "30000000") {
    result3.textContent = "You got it!";
    result3.classList.add('correct')
@@ -83,6 +87,7 @@ function clickAction3() {
 <script>
 function clickAction4() {
   result4.textContent = "Nope!"
+  result4.classList.add('incorrect')
  if (answer44.checked) {
    result4.textContent = "You got it!";
    result4.classList.add('correct')
@@ -101,6 +106,7 @@ function clickAction4() {
 <script>
 function clickAction5() {
   result5.textContent = "Nope!"
+  result5.classList.add('incorrect')
  if (answer5.value == "Robert Wadlow") {
    result5.textContent = "You got it!";
    result5.classList.add('correct')
@@ -123,6 +129,7 @@ function inputAction5() {
 <script>
 function clickAction6() {
   result6.textContent = "Nope!"
+  result6.classList.add('incorrect')
  if (answer6.value == "pneumonoultramicroscopicsilicovolcanoconiosis") {
    result6.textContent = "You got it!";
    result6.classList.add('correct')
@@ -148,6 +155,7 @@ function changeAction2() {
 }
 function clickAction7() {
   result7.textContent = "Nope!"
+  result7.classList.add('incorrect')
  if (answer7.value == "195") {
    result7.textContent = "You got it!";
    result7.classList.add('correct')
@@ -170,6 +178,7 @@ function changeAction3() {
 }
 function clickAction8() {
   result8.textContent = "Nope!"
+  result8.classList.add('incorrect')
  if (answer8.value == "79") {
    result8.textContent = "You got it!";
    result8.classList.add('correct')
@@ -189,6 +198,7 @@ function clickAction8() {
 <script>
 function clickAction9() {
   result9.textContent = "Nope!"
+  result9.classList.add('incorrect')
  if (answer9.value == "1789") {
    result9.textContent = "You got it!";
    result9.classList.add('correct')
@@ -211,6 +221,7 @@ function inputAction9() {
 <script>
 function clickAction10() {
   result10.textContent = "Nope!"
+  result10.classList.add('incorrect')
  if (answer10.value == "269") {
    result10.textContent = "You got it!";
    result10.classList.add('correct')
@@ -221,12 +232,43 @@ function clickAction10() {
 function inputAction10() {
   result10.textContent = "..."
 }
-function clickAction11() {
-  score3.textContent = score5.value;
-}
   answer10.oninput = inputAction10
   button10.onclick = clickAction10
-  button10.onclick = clickAction11
 
 </script>
-<h2 class="score4">Your score was: <span id="score3" class="score">...</span></h2>
+<p><button id="showscore">Show Score</button></p>
+<h2 class="score4">Your score was: <span id="score3" class="blank">...</span></h2>
+<h1 id="comment">...</h1>
+<script>
+function showScore() {
+  score3.classList.remove('blank');
+  score3.classList.add('score');
+}
+function comment() {
+  if (score3.textContent == "0") {
+    comment.textContent = "How did you get them all wrong?";
+} else if (score3.textContent == "1") {
+    comment.textContent = "I mean... at least you got one right...";
+} else if (score3.textContent == "2") {
+    comment.textContent = "2 out of 10... I'm disgusted";
+} else if (score3.textContent == "3") {
+    comment.textContent = "Not very impressive my friend";
+} else if (score3.textContent == "4") {
+    comment.textContent = "This is not a good score, you truly are a silly billy";
+} else if (score3.textContent == "5") {
+    comment.textContent = "Only half correct... I'm sure you'll do better next time";
+} else if (score3.textContent == "6") {
+    comment.textContent = "I hope you aren't too pleased with that";
+} else if (score3.textContent == "7") {
+    comment.textContent = "Well I suppose you got most of them correct";
+} else if (score3.textContent == "8") {
+    comment.textContent = "Not too shabby";
+} else if (score3.textContent == "9") {
+    comment.textContent = "So close, you must be gutted";
+} else if (score3.textContent == "10") {
+    comment.textContent = "Full marks, congratulations!";
+}
+}
+showscore.onclick = showScore
+showscore.onclick = comment
+</script>

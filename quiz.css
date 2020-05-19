@@ -3,6 +3,11 @@
   font-family: cursive;
   text-align: center;
 }
+.incorrect {
+  color: red;
+  font-family: cursive;
+  text-align: center;
+}
 h1 {
 	text-align: center;
 	font-family: cursive;
@@ -22,3 +27,9 @@ h2 {
 	text-align: center;
 	font-family: cursive;
 }
+.blank {
+	font-family: cursive;
+	color: white;
+	background-color: white;
+}
+	
