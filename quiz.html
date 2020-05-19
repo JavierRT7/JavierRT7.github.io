@@ -255,7 +255,8 @@ function showScore() {
   score3.classList.remove('blank');
   score3.classList.add('score');
 }
-function comment() {
+function Comment3() {
+  comment.textContent = "ok"
   if (score3.textContent == "0") {
     comment.textContent = "How did you get them all wrong?";
 } else if (score3.textContent == "1") {
@@ -281,5 +282,5 @@ function comment() {
 }
 }
 showscore.onclick = showScore
-showcomment.onclick = comment
+showcomment.onclick = Comment3
 </script>
