@@ -237,7 +237,7 @@ function inputAction10() {
 
 </script>
 <p><button id="showscore">Show Score</button></p>
-<h2 class="score4">Your score was: <span id="score3" class="blank">...</span></h2>
+<h2 class="score4">Your score was: </h2><h2 class="blank" id="score3">...</h2>
 <h1 id="comment">...</h1>
 <script>
 function showScore() {
@@ -245,7 +245,7 @@ function showScore() {
   score3.classList.add('score');
 }
 function comment() {
-  if (score3.value == "0") {
+  if (score3.textContent == "0") {
     comment.textContent = "How did you get them all wrong?";
 } else if (score3.textContent == "1") {
     comment.textContent = "I mean... at least you got one right...";
