@@ -248,6 +248,7 @@ function inputAction10() {
 </script>
 <p><button id="showscore">Show Score</button></p>
 <h2 class="score4">Your score was: </h2><h2 class="blank" id="score3">...</h2>
+<p><button id="showcomment">Show Comment</button></p>
 <h1 id="comment"></h1>
 <script>
 function showScore() {
@@ -279,6 +280,6 @@ function comment() {
     comment.textContent = "Full marks, congratulations!";
 }
 }
-button10.onclick = showScore
+showscore.onclick = showScore
 showscore.onclick = comment
 </script>
