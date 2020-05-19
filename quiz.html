@@ -15,6 +15,7 @@ function clickAction1() {
   result1.classList.add('incorrect')
  if (answer1.value == "gorilla gorilla gorilla") {
    result1.textContent = "You got it!";
+   result1.classList.remove('incorrect')
    result1.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -38,6 +39,7 @@ function clickAction2() {
   result2.classList.add('incorrect')
  if (answer2.value == "Ouagadougou") {
    result2.textContent = "You got it!";
+   result2.classList.remove('incorrect')
    result2.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -64,6 +66,7 @@ function clickAction3() {
   result3.classList.add('incorrect')
  if (answer3.value == "30000000") {
    result3.textContent = "You got it!";
+   result3.classList.remove('incorrect')
    result3.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -90,6 +93,7 @@ function clickAction4() {
   result4.classList.add('incorrect')
  if (answer44.checked) {
    result4.textContent = "You got it!";
+   result4.classList.remove('incorrect')
    result4.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -109,6 +113,7 @@ function clickAction5() {
   result5.classList.add('incorrect')
  if (answer5.value == "Robert Wadlow") {
    result5.textContent = "You got it!";
+   result5.classList.remove('incorrect')
    result5.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -132,6 +137,7 @@ function clickAction6() {
   result6.classList.add('incorrect')
  if (answer6.value == "pneumonoultramicroscopicsilicovolcanoconiosis") {
    result6.textContent = "You got it!";
+   result6.classList.remove('incorrect')
    result6.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -158,6 +164,7 @@ function clickAction7() {
   result7.classList.add('incorrect')
  if (answer7.value == "195") {
    result7.textContent = "You got it!";
+   result7.classList.remove('incorrect')
    result7.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -181,6 +188,7 @@ function clickAction8() {
   result8.classList.add('incorrect')
  if (answer8.value == "79") {
    result8.textContent = "You got it!";
+   result8.classList.remove('incorrect')
    result8.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -201,6 +209,7 @@ function clickAction9() {
   result9.classList.add('incorrect')
  if (answer9.value == "1789") {
    result9.textContent = "You got it!";
+   result9.classList.remove('incorrect')
    result9.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -224,6 +233,7 @@ function clickAction10() {
   result10.classList.add('incorrect')
  if (answer10.value == "269") {
    result10.textContent = "You got it!";
+   result10.classList.remove('incorrect')
    result10.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
    score3.textContent = Number(score3.textContent) + 1
@@ -238,7 +248,7 @@ function inputAction10() {
 </script>
 <p><button id="showscore">Show Score</button></p>
 <p><h2 class="score4">Your score was: </h2><h2 class="blank" id="score3">...</h2></p>
-<h1 id="comment">...</h1>
+<h1 id="comment"></h1>
 <script>
 function showScore() {
   score3.classList.remove('blank');
