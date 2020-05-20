@@ -247,7 +247,6 @@ function inputAction10() {
 
 </script>
 <h2 class="score4">Your score was: <span class="score" id="score3">...</span></h2>
-<p><button id="showcomment">Show Comment</button></p>
 <h1 id="comment">...</h1>
 <script>
 function Comment3() {
@@ -256,25 +255,25 @@ function Comment3() {
     comment.textContent = "How did you get them all wrong?";
 } else if (score5.textContent == "1") {
     comment.textContent = "I mean... at least you got one right...";
-} else if (score5.value == "2") {
+} else if (score5.textContent == "2") {
     comment.textContent = "2 out of 10... I'm disgusted";
-} else if (score5.value == "3") {
+} else if (score5.textContent == "3") {
     comment.textContent = "Not very impressive my friend";
-} else if (score5.value == "4") {
+} else if (score5.textContent == "4") {
     comment.textContent = "This is not a good score, you truly are a silly billy";
-} else if (score5.value == "5") {
+} else if (score5.textContent == "5") {
     comment.textContent = "Only half correct... I'm sure you'll do better next time";
-} else if (score5.value == "6") {
+} else if (score5.textContent == "6") {
     comment.textContent = "I hope you aren't too pleased with that";
-} else if (score5.value == "7") {
+} else if (score5.textContent == "7") {
     comment.textContent = "Well I suppose you got most of them correct";
-} else if (score5.value == "8") {
+} else if (score5.textContent == "8") {
     comment.textContent = "Not too shabby";
-} else if (score5.value == "9") {
+} else if (score5.textContent == "9") {
     comment.textContent = "So close, you must be gutted";
-} else if (score5.value == "10") {
+} else if (score5.textContent == "10") {
     comment.textContent = "Full marks, congratulations!";
 }
 }
-showcomment.onclick = Comment3
+button10.onclick = Comment3
 </script>
