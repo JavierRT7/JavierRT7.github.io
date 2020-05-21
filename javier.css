@@ -14,5 +14,8 @@ li {
 }
 .body {
 	background-color: yellow;
+	border: solid 3px black;
+}
+body {
 	width: 450px;
 }
