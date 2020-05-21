@@ -6,7 +6,7 @@ p {
 	margin: 20px auto 20px auto;
 	text-align: center;
 }
-ul, li {
+li {
 	margin: 20px auto 20px auto;
 	text-align: center;
 	border: solid 2px black;
@@ -14,4 +14,5 @@ ul, li {
 }
 .body {
 	background-color: yellow;
+	width: 450px;
 }
