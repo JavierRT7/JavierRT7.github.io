@@ -11,6 +11,7 @@ h1, h3 {
 .body {
 	background-color: yellow;
 	border: solid 3px black;
+	width: 450px;
 }
 body {
 	width: 450px;
