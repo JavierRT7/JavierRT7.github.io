@@ -4,7 +4,7 @@ h1, h3 {
 p {
 	margin: 20px auto 20px auto;#
 }
-li {
+.list {
 	margin: 20px auto 20px auto;
 	text-align: center;
 	border-top: solid 2px black;
