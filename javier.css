@@ -1,5 +1,6 @@
 h1, h3 {
 	font-family: cursive;
+	width: 450px;
 }
 .list {
 	border-top: solid 2px black;
@@ -11,8 +12,5 @@ h1, h3 {
 .body {
 	background-color: yellow;
 	border: solid 3px black;
-	width: 450px;
-}
-body {
 	width: 450px;
 }
