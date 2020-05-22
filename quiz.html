@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="quiz.css">
 <h3>Score: <span class="score" id="score5">...</span></h3>
 <div class="body">
-<h1>Try my quiz!</h1>
+<h1>Try My Quiz!</h1>
 <p><strong>What is the scientific name of the western lowland gorilla?</strong></p>
 <p><input id="answer1"></p>
 <p><button id="button1">Check answer</button></p>
@@ -22,7 +22,6 @@ function clickAction1() {
    result1.classList.remove('incorrect')
    result1.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction1() {
@@ -50,7 +49,6 @@ function clickAction2() {
    result2.classList.remove('incorrect')
    result2.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction2() {
@@ -81,7 +79,6 @@ function clickAction3() {
    result3.classList.remove('incorrect')
    result3.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
   answer3.onchange = changeAction1
@@ -112,7 +109,6 @@ function clickAction4() {
    result4.classList.remove('incorrect')
    result4.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
   button4.onclick = clickAction4
@@ -136,7 +132,6 @@ function clickAction5() {
    result5.classList.remove('incorrect')
    result5.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction5() {
@@ -164,7 +159,6 @@ function clickAction6() {
    result6.classList.remove('incorrect')
    result6.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction6() {
@@ -195,7 +189,6 @@ function clickAction7() {
    result7.classList.remove('incorrect')
    result7.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
   answer7.onchange = changeAction2
@@ -223,7 +216,6 @@ function clickAction8() {
    result8.classList.remove('incorrect')
    result8.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
   answer8.onchange = changeAction3
@@ -248,7 +240,6 @@ function clickAction9() {
    result9.classList.remove('incorrect')
    result9.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction9() {
@@ -276,7 +267,6 @@ function clickAction10() {
    result10.classList.remove('incorrect')
    result10.classList.add('correct')
    score5.textContent = Number(score5.textContent) + 1
-   score3.textContent = Number(score3.textContent) + 1
  }
 };
 function inputAction10() {
@@ -287,10 +277,14 @@ function inputAction10() {
 
 </script>
 <div class="body">
+<button id="showscore">Show Score</button>
 <h2 class="score4">Your score was: <span class="score" id="score3">...</span></h2>
 <h1 id="comment">...</h1>
 </div>
 <script>
+function showscore9() {
+  score3.textContent = score5.textContent;
+}
 function Comment3() {
   if (score5.textContent == "0") {
     comment.textContent = "How did you get them all wrong?";
@@ -316,5 +310,6 @@ function Comment3() {
     comment.textContent = "Full marks, congratulations!";
 }
 }
-button10.onclick = Comment3
+showscore.onclick = Comment3
+showscore.onclick = showscore9
 </script>
