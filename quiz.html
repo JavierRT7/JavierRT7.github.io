@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="quiz.css">
 <h3>Score: <span class="score" id="score5">...</span></h3>
+<div class="body">
 <h1>Try my quiz!</h1>
 <p><strong>What is the scientific name of the western lowland gorilla?</strong></p>
 <p><input id="answer1"></p>
 <p><button id="button1">Check answer</button></p>
+<div class="reveal">
 <h1 id="result1">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction1() {
@@ -28,10 +32,14 @@ function inputAction1() {
   button1.onclick = clickAction1
 
 </script>
+<div class="body">
 <p><strong>What is the capital of Burkina Faso?</strong></p>
 <p><input id="answer2"></p>
 <p><button id="button2">Check answer</button></p>
+<div class="reveal">
 <h1 id="result2">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction2() {
@@ -52,10 +60,14 @@ function inputAction2() {
   button2.onclick = clickAction2
 
 </script>
+<div class="body">
 <p><strong>How many deer are there in the world?</strong></p>
 <p><input id="answer3" type="range" min="0" max="100000000" step="5000000"><span id="rangevalue1">50000000</span></p>
 <p><button id="button3">Check answer</button></p>
+<div class="reveal">
 <h1 id="result3">...</h1>
+</div>
+</div>
 
 <script>
 function changeAction1() {
@@ -76,6 +88,7 @@ function clickAction3() {
   button3.onclick = clickAction3
 
 </script>
+<div class="body">
 <p><strong>Which country has the longest coastline in the world?</strong></p>
 <p>
 <label><input id="answer41" type="checkbox">Mexico</label><br>
@@ -85,7 +98,10 @@ function clickAction3() {
 <label><input id="answer45" type="checkbox">Greenland</label>
 </p>
 <p><button id="button4">Check answer</button></p>
+<div class="reveal">
 <h1 id="result4">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction4() {
@@ -102,10 +118,14 @@ function clickAction4() {
   button4.onclick = clickAction4
 
 </script>
+<div class="body">
 <p><strong>Who is the tallest man ever?</strong></p>
 <p><input id="answer5"></p>
 <p><button id="button5">Check answer</button></p>
+<div class="reveal">
 <h1 id="result5">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction5() {
@@ -126,10 +146,14 @@ function inputAction5() {
   button5.onclick = clickAction5
 
 </script>
+<div class="body">
 <p><strong>What is the longest word in the English language?</strong></p>
 <p><input id="answer6"></p>
 <p><button id="button6">Check answer</button></p>
+<div class="reveal">
 <h1 id="result6">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction6() {
@@ -150,10 +174,14 @@ function inputAction6() {
   button6.onclick = clickAction6
 
 </script>
+<div class="body">
 <p><strong>How many countries are there in the world?</strong></p>
 <p><input id="answer7" type="range" min="0" max="200" step="5"><span id="rangevalue2"></span></p>
 <p><button id="button7">Check answer</button></p>
+<div class="reveal">
 <h1 id="result7">...</h1>
+</div>
+</div>
 
 <script>
 function changeAction2() {
@@ -174,10 +202,14 @@ function clickAction7() {
   button7.onclick = clickAction7
 
 </script>
+<div class="body">
 <p><strong>How old is Tom Jones?</strong></p>
 <p><input id="answer8" type="range" min="0" max="100" step="1"><span id="rangevalue3"></span></p>
 <p><button id="button8">Check answer</button></p>
+<div class="reveal">
 <h1 id="result8">...</h1>
+</div>
+</div>
 
 <script>
 function changeAction3() {
@@ -198,10 +230,14 @@ function clickAction8() {
   button8.onclick = clickAction8
 
 </script>
+<div class="body">
 <p><strong>Which year was the French revolution?</strong></p>
 <p><input id="answer9"></p>
 <p><button id="button9">Check answer</button></p>
+<div class="reveal">
 <h1 id="result9">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction9() {
@@ -222,10 +258,14 @@ function inputAction9() {
   button9.onclick = clickAction9
 
 </script>
+<div class="body">
 <p><strong>How long was the Titanic in meters?</strong></p>
 <p><input id="answer10"></p>
 <p><button id="button10">Check answer</button></p>
+<div class="reveal">
 <h1 id="result10">...</h1>
+</div>
+</div>
 
 <script>
 function clickAction10() {
@@ -246,8 +286,10 @@ function inputAction10() {
   button10.onclick = clickAction10
 
 </script>
+<div class="body">
 <h2 class="score4">Your score was: <span class="score" id="score3">...</span></h2>
 <h1 id="comment">...</h1>
+</div>
 <script>
 function Comment3() {
   if (score5.textContent == "0") {
