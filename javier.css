@@ -1,6 +1,7 @@
 h1, h3 {
 	font-family: cursive;
 	width: 450px;
+	text-align: center;
 }
 .list {
 	border-top: solid 2px black;
