@@ -16,11 +16,11 @@
 </div>
 <form name="question">
 <p id="box">Question - How long was the Tully Monster?</p> 
+</form>
 <p>Answer: <input type="text" name="answer"></p>
 <button type="button" onclick="validate()">Show answer</button>
 <p id="box2">Click below to find out where it lived.</p>
 <button type="button" onclick="document.getElementById('box2').innerHTML = 'It lived in the tropical estuaries of Illinois, USA'">Show habitat</button>
-</form>
 <script>
 function validate() {
    var x = document.forms["question"]["answer"].value;
