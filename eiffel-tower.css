@@ -29,8 +29,8 @@ ul, ol {
 	text-align: center;
 	width: 400px;
 }
-.right-column {
+#right-column {
 	float: right;
-	text-align: center;
-	width: 400px;
+	text-align: left;
+	width: 350px;
 }
