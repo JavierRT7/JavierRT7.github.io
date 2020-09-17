@@ -22,28 +22,40 @@
 <h1>Now let's create a similar page of your favourite things.<h1>
 <h4>What is your first category? e.g. food or racing</h4>
 <p><input id="Category1"></p>
+<button type="button" onclick="Category1Action">Submit</button>
 <h6>What is the first thing you would like to put in that category?</h6>
 <p><input id="Thing1"></p>
+<button type="button" onclick="Thing1Action">Submit</button>
 <h6>What is the second thing you would like to put in that category?</h6>
 <p><input id="Thing2"></p>
+<button type="button" onclick="Thing2Action">Submit</button>
 <h6>What is the third thing you would like to put in that category?</h6>
 <p><input id="Thing3"></p>
+<button type="button" onclick="Thing3Action">Submit</button>
 <h4>What is your second category?</h4>
 <p><input id="Category2"></p>
+<button type="button" onclick="Category2Action">Submit</button>
 <h6>What is the first thing you would like to put in that category?</h6>
 <p><input id="Thing4"></p>
+<button type="button" onclick="Thing4Action">Submit</button>
 <h6>What is the second thing you would like to put in that category?</h6>
 <p><input id="Thing5"></p>
+<button type="button" onclick="Thing5Action">Submit</button>
 <h6>What is the third thing you would like to put in that category?</h6>
 <p><input id="Thing6"></p>
+<button type="button" onclick="Thing6Action">Submit</button>
 <h4>What is your third category?</h4>
 <p><input id="Category3"></p>
+<button type="button" onclick="Category3Action">Submit</button>
 <h6>What is the first thing you would like to put in that category?</h6>
 <p><input id="Thing7"></p>
+<button type="button" onclick="Thing7Action">Submit</button>
 <h6>What is the second thing you would like to put in that category?</h6>
 <p><input id="Thing8"></p>
+<button type="button" onclick="Thing8Action">Submit</button>
 <h6>What is the third thing you would like to put in that category?</h6>
 <p><input id="Thing9"></p>
+<button type="button" onclick="Thing9Action">Submit</button>
 <h4>What colour do you want the border to be?</h4>
 <p><button id="blueborder">Blue</button><button id="redborder">Red</button><button id="greenborder">Green</button></p>
 <h4>What colour do you want the category names to be?</h4>
@@ -171,27 +183,6 @@ function Thing8Action() {
 function Thing9Action() {
   Thing29.textContent = Thing9.value;
 }
-blueborder.onclick = blueborderAction
-redborder.onclick = redborderAction
-greenborder.onclick = greenborderAction
-bluecategory.onclick = bluecategoryAction
-redcategory.onclick = redcategoryAction
-greencategory.onclick = greengategoryAction
-bluething.onclick = bluethingAction
-redthing.onclick = redthingAction
-greenthing.onclick = greenthingAction
-Category1.oninput = Category1Action
-Thing1.oninput = Thing1Action
-Thing2.oninput = Thing2Action
-Thing3.oninput = Thing3Action
-Category2.oninput = Category2Action
-Thing4.oninput = Thing4Action
-Thing5.oninput = Thing5Action
-Thing6.oninput = Thing6Action
-Category3.oninput = Category3Action
-Thing7.oninput = Thing7Action
-Thing8.oninput = Thing8Action
-Thing9.oninput = Thing9Action
 </script>
 
 
