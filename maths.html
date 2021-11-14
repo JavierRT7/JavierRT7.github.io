@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="maths.css">
+<h3>Score: <span class="score" id="score5">...</span></h3>
+<div class="body">
+<h1>Try My Quiz!</h1>
+<p><strong>What is 7x8?</strong></p>
+<p><input id="answer1"></p>
+<p><button id="button1">Check answer</button></p>
+<div class="reveal">
+<h1 id="result1">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction1() {
+  result1.textContent = "Nope!"
+  score5.textContent = "0"
+  result1.classList.add('incorrect')
+ if (answer1.value == "56") {
+   result1.textContent = "You got it!";
+   result1.classList.remove('incorrect')
+   result1.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction1() {
+  result1.textContent = "..."
+}
+  answer1.oninput = inputAction1
+  button1.onclick = clickAction1
+
+</script>
+<div class="body">
+<p><strong>What is 6x8?</strong></p>
+<p><input id="answer2"></p>
+<p><button id="button2">Check answer</button></p>
+<div class="reveal">
+<h1 id="result2">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction2() {
+  result2.textContent = "Nope!"
+  result2.classList.add('incorrect')
+ if (answer2.value == "48") {
+   result2.textContent = "You got it!";
+   result2.classList.remove('incorrect')
+   result2.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction2() {
+  result2.textContent = "..."
+}
+  answer2.oninput = inputAction2
+  button2.onclick = clickAction2
+
+</script>
+<div class="body">
+<p><strong>What is 5+3x8?</strong></p>
+<p><input id="answer3" type="range" min="0" max="100000000" step="5000000"><span id="rangevalue1">50000000</span></p>
+<p><button id="button3">Check answer</button></p>
+<div class="reveal">
+<h1 id="result3">...</h1>
+</div>
+</div>
+
+<script>
+function changeAction1() {
+  rangevalue1.textContent = answer3.value;
+}
+function clickAction3() {
+  result3.textContent = "Nope!"
+  result3.classList.add('incorrect')
+ if (answer3.value == "29") {
+   result3.textContent = "You got it!";
+   result3.classList.remove('incorrect')
+   result3.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+  answer3.onchange = changeAction1
+  button3.onclick = clickAction3
+
+</script>
+<div class="body">
+<p><strong>What is the value of pi to 2 decimal places?</strong></p>
+<p>
+<label><input id="answer41" type="checkbox">2.69</label><br>
+<label><input id="answer42" type="checkbox">99.45</label><br>
+<label><input id="answer43" type="checkbox">3.13</label><br>
+<label><input id="answer44" type="checkbox">3.14</label><br>
+<label><input id="answer45" type="checkbox">3.15</label>
+</p>
+<p><button id="button4">Check answer</button></p>
+<div class="reveal">
+<h1 id="result4">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction4() {
+  result4.textContent = "Nope!"
+  result4.classList.add('incorrect')
+ if (answer44.checked) {
+   result4.textContent = "You got it!";
+   result4.classList.remove('incorrect')
+   result4.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+  button4.onclick = clickAction4
+
+</script>
+<div class="body">
+<p><strong>How many sides does a heptagon have?</strong></p>
+<p><input id="answer5"></p>
+<p><button id="button5">Check answer</button></p>
+<div class="reveal">
+<h1 id="result5">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction5() {
+  result5.textContent = "Nope!"
+  result5.classList.add('incorrect')
+ if (answer5.value == "7") {
+   result5.textContent = "You got it!";
+   result5.classList.remove('incorrect')
+   result5.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction5() {
+  result5.textContent = "..."
+}
+  answer5.oninput = inputAction5
+  button5.onclick = clickAction5
+
+</script>
+<div class="body">
+<p><strong>How many kilometres is a mile to one decimal place?</strong></p>
+<p><input id="answer6"></p>
+<p><button id="button6">Check answer</button></p>
+<div class="reveal">
+<h1 id="result6">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction6() {
+  result6.textContent = "Nope!"
+  result6.classList.add('incorrect')
+ if (answer6.value == "1.6") {
+   result6.textContent = "You got it!";
+   result6.classList.remove('incorrect')
+   result6.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction6() {
+  result6.textContent = "..."
+}
+  answer6.oninput = inputAction6
+  button6.onclick = clickAction6
+
+</script>
+<div class="body">
+<p><strong>Solve for x: 14-x=5x-4?</strong></p>
+<p><input id="answer7" type="range" min="0" max="200" step="5"><span id="rangevalue2"></span></p>
+<p><button id="button7">Check answer</button></p>
+<div class="reveal">
+<h1 id="result7">...</h1>
+</div>
+</div>
+
+<script>
+function changeAction2() {
+  rangevalue2.textContent = answer7.value;
+}
+function clickAction7() {
+  result7.textContent = "Nope!"
+  result7.classList.add('incorrect')
+ if (answer7.value == "3") {
+   result7.textContent = "You got it!";
+   result7.classList.remove('incorrect')
+   result7.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+  answer7.onchange = changeAction2
+  button7.onclick = clickAction7
+
+</script>
+<div class="body">
+<p><strong>How old is Tom Jones?</strong></p>
+<p><input id="answer8" type="range" min="0" max="100" step="1"><span id="rangevalue3"></span></p>
+<p><button id="button8">Check answer</button></p>
+<div class="reveal">
+<h1 id="result8">...</h1>
+</div>
+</div>
+
+<script>
+function changeAction3() {
+  rangevalue3.textContent = answer8.value;
+}
+function clickAction8() {
+  result8.textContent = "Nope!"
+  result8.classList.add('incorrect')
+ if (answer8.value == "81") {
+   result8.textContent = "You got it!";
+   result8.classList.remove('incorrect')
+   result8.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+  answer8.onchange = changeAction3
+  button8.onclick = clickAction8
+
+</script>
+<div class="body">
+<p><strong>How many millimetres is a centimetre?</strong></p>
+<p><input id="answer9"></p>
+<p><button id="button9">Check answer</button></p>
+<div class="reveal">
+<h1 id="result9">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction9() {
+  result9.textContent = "Nope!"
+  result9.classList.add('incorrect')
+ if (answer9.value == "10") {
+   result9.textContent = "You got it!";
+   result9.classList.remove('incorrect')
+   result9.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction9() {
+  result9.textContent = "..."
+}
+  answer9.oninput = inputAction9
+  button9.onclick = clickAction9
+
+</script>
+<div class="body">
+<p><strong>What is 1+2?</strong></p>
+<p><input id="answer10"></p>
+<p><button id="button10">Check answer</button></p>
+<div class="reveal">
+<h1 id="result10">...</h1>
+</div>
+</div>
+
+<script>
+function clickAction10() {
+  result10.textContent = "Nope!"
+  result10.classList.add('incorrect')
+ if (answer10.value == "3") {
+   result10.textContent = "You got it!";
+   result10.classList.remove('incorrect')
+   result10.classList.add('correct')
+   score5.textContent = Number(score5.textContent) + 1
+ }
+};
+function inputAction10() {
+  result10.textContent = "..."
+}
+  answer10.oninput = inputAction10
+  button10.onclick = clickAction10
+
+</script>
+<div class="body">
+<button id="showscore">Show Score</button>
+<h2 class="score4">Your score was: <span class="score" id="score3">...</span></h2>
+<h1 id="comment">...</h1>
+</div>
+<script>
+function Comment3() {
+  score3.textContent = score5.textContent;
+  if (score5.textContent == "0") {
+    comment.textContent = "How did you get them all wrong?";
+} else if (score5.textContent == "1") {
+    comment.textContent = "I mean... at least you got one right...";
+} else if (score5.textContent == "2") {
+    comment.textContent = "2 out of 10... I'm disgusted";
+} else if (score5.textContent == "3") {
+    comment.textContent = "Not very impressive my friend";
+} else if (score5.textContent == "4") {
+    comment.textContent = "This is not a good score, you truly are a silly billy";
+} else if (score5.textContent == "5") {
+    comment.textContent = "Only half correct... I'm sure you'll do better next time";
+} else if (score5.textContent == "6") {
+    comment.textContent = "I hope you aren't too pleased with that";
+} else if (score5.textContent == "7") {
+    comment.textContent = "Well I suppose you got most of them correct";
+} else if (score5.textContent == "8") {
+    comment.textContent = "Not too shabby";
+} else if (score5.textContent == "9") {
+    comment.textContent = "So close, you must be gutted";
+} else if (score5.textContent == "10") {
+    comment.textContent = "Full marks, congratulations!";
+}
+}
+showscore.onclick = Comment3
+</script>

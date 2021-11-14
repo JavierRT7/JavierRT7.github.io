@@ -1,0 +1,45 @@
+.correct {
+  color: green;
+  font-family: cursive;
+  text-align: center;
+}
+.incorrect {
+  color: red;
+  font-family: cursive;
+  text-align: center;
+}
+h1 {
+	text-align: center;
+	font-family: cursive;
+}
+p {
+	text-align: center;
+}
+h2 {
+	font-family: cursive;
+}
+.score {
+	font-family: cursive;
+	color: blue;
+}
+.score4 {
+	text-align: center;
+	font-family: cursive;
+}
+.body {
+	font-family: cursive;
+	background-color: yellow;
+	width: 450px;
+	border: solid 4px black;
+	padding: 10px;
+	text-align: center;
+	margin: 20px auto 20px auto;
+}
+.reveal {
+	font-family: cursive;
+	background-color: white;
+	border: solid 2px black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+	
